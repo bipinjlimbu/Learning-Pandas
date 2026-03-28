@@ -17,3 +17,8 @@ print(row_index_2)
 print("\nSelecting rows with index 1 and 3:")
 rows_index_1_and_3 = df.loc[[1, 3]]
 print(rows_index_1_and_3)
+
+# Selecting rows range
+print("\nSelecting rows from index 1 to 3:")
+rows_index_1_to_3 = df.loc[1:3]
+print(rows_index_1_to_3)
