@@ -17,7 +17,7 @@ print(df_dropped_column)
 
 #Permanently removing a column
 print("\nDataFrame after permanently removing the 'Department' column:")
-df.drop('Department', axis=1, inplace=True)
+df.drop(['Salary','Department'], axis=1, inplace=True)
 print(df)
 
 # Removing a row
@@ -27,5 +27,5 @@ print(df_dropped_row)
 
 # Permanently removing a row
 print("\nDataFrame after permanently removing the row with index 2:")
-df.drop(2, axis=0, inplace=True)
+df.drop([2,4], axis=0, inplace=True)
 print(df)
