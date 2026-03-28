@@ -30,3 +30,7 @@ print("\nSelecting the row with index 2 using iloc:")
 row_index_2_iloc = df.iloc[1]
 print(row_index_2_iloc)
  
+# Selecting multiple rows using iloc
+print("\nSelecting rows with index 1 and 3 using iloc:")
+rows_index_1_and_3_iloc = df.iloc[[0, 2]]
+print(rows_index_1_and_3_iloc)
