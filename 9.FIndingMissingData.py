@@ -12,3 +12,8 @@ df = pd.DataFrame(data)
 # Finding missing values
 print("DataFrame with missing values:\n")
 print(df)
+
+# Checking for missing values
+print("\nChecking for missing values:\n")
+missing_values = df.isna()
+print(missing_values)
