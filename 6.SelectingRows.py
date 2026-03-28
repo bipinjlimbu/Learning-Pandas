@@ -22,3 +22,11 @@ print(rows_index_1_and_3)
 print("\nSelecting rows from index 1 to 3:")
 rows_index_1_to_3 = df.loc[1:3]
 print(rows_index_1_to_3)
+
+index = ['Row1', 'Row2', 'Row3', 'Row4', 'Row5']
+df = pd.DataFrame(data, index=index)
+# Selecting a single row using iloc
+print("\nSelecting the row with index 2 using iloc:")
+row_index_2_iloc = df.iloc[1]
+print(row_index_2_iloc)
+ 
