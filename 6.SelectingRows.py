@@ -13,3 +13,7 @@ print("Selecting the row with index 2:")
 row_index_2 = df.loc[2]
 print(row_index_2)
 
+# Selecting multiple rows
+print("\nSelecting rows with index 1 and 3:")
+rows_index_1_and_3 = df.loc[[1, 3]]
+print(rows_index_1_and_3)
