@@ -34,3 +34,8 @@ print(row_index_2_iloc)
 print("\nSelecting rows with index 1 and 3 using iloc:")
 rows_index_1_and_3_iloc = df.iloc[[0, 2]]
 print(rows_index_1_and_3_iloc)
+
+# Selecting rows range using iloc
+print("\nSelecting rows from index 1 to 3 using iloc:")
+rows_index_1_to_3_iloc = df.iloc[0:3]
+print(rows_index_1_to_3_iloc)
