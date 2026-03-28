@@ -12,3 +12,8 @@ df = pd.DataFrame(data)
 print("Selecting the 'Name' column:")
 name_column = df['Name']
 print(name_column)
+
+# Selecting multiple columns
+print("\nSelecting the 'Name' and 'City' columns:")
+name_city_columns = df[['Name', 'City']]
+print(name_city_columns)
