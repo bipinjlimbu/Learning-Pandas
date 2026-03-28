@@ -35,3 +35,15 @@ data_array = np.array([
 print("\nDataFrame from a NumPy array:\n")
 df_from_array = pd.DataFrame(data_array, columns=columns)
 print(df_from_array)
+
+# Creating a DataFrame from a list of lists
+data_list_of_lists = [
+    ['Alice', 25, 'New York'],
+    ['Bob', 30, 'Los Angeles'],
+    ['Charlie', 35, 'Chicago'],
+    ['David', 40, 'Houston'],
+    ['Eve', 45, 'Phoenix']
+]
+print("\nDataFrame from a list of lists:\n")
+df_from_list_of_lists = pd.DataFrame(data_list_of_lists, columns=columns)
+print(df_from_list_of_lists)
