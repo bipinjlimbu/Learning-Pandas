@@ -19,3 +19,13 @@ print(df_dropped_column)
 print("\nDataFrame after permanently removing the 'Department' column:")
 df.drop('Department', axis=1, inplace=True)
 print(df)
+
+# Removing a row
+print("\nDataFrame after removing the row with index 2:")
+df_dropped_row = df.drop(2, axis=0)
+print(df_dropped_row)
+
+# Permanently removing a row
+print("\nDataFrame after permanently removing the row with index 2:")
+df.drop(2, axis=0, inplace=True)
+print(df)
