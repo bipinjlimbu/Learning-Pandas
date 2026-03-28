@@ -17,3 +17,8 @@ print(df)
 print("\nChecking for missing values:\n")
 missing_values = df.isna()
 print(missing_values)
+
+# Counting missing values in each column
+print("\nCounting missing values in each column:\n")
+missing_values_count = df.isna().sum()
+print(missing_values_count)
