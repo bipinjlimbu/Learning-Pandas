@@ -19,3 +19,8 @@ print(joined_df)
 joined_df_outer = df1.join(df2, how='outer')
 print("\nJoined DataFrame using outer join:\n")
 print(joined_df_outer)
+
+#Left Joining DataFrames
+joined_df_left = df1.join(df2, how='left')
+print("\nJoined DataFrame using left join:\n")
+print(joined_df_left)
