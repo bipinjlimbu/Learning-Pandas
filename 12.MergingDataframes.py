@@ -28,3 +28,8 @@ print(merged_outer)
 print("\nMerged DataFrame using left join:\n")
 merged_left = pd.merge(df_employees, df_salaries, on='ID', how='left')
 print(merged_left)
+
+# Merging DataFrames using right join
+print("\nMerged DataFrame using right join:\n")
+merged_right = pd.merge(df_employees, df_salaries, on='ID', how='right')
+print(merged_right)
