@@ -13,3 +13,8 @@ df = pd.DataFrame(data)
 print("DataFrame after removing rows with missing values:\n")
 df_dropped_rows = df.dropna()
 print(df_dropped_rows)
+
+# Removing columns with missing values
+print("\nDataFrame after removing columns with missing values:\n")
+df_dropped_columns = df.dropna(axis=1)
+print(df_dropped_columns)
