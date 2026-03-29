@@ -25,5 +25,5 @@ print(missing_values_count)
 
 # Checking if any missing values exist in the Rows of DataFrame
 print("\nFinding if any missing values exist in the DataFrame:\n")
-any_missing_values = df.isna().any(axis=0)
+any_missing_values = df.isna().any(axis=1)
 print(any_missing_values)
