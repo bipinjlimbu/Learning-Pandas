@@ -27,3 +27,8 @@ print(missing_values_count)
 print("\nFinding if any missing values exist in the DataFrame:\n")
 any_missing_values = df.isna().any(axis=1)
 print(any_missing_values)
+
+# Finding the total number of missing values in the DataFrame
+print("\nTotal number of missing values in the DataFrame:\n")
+total_missing_values = df.isna().sum().sum()
+print(total_missing_values)
