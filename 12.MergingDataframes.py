@@ -18,3 +18,8 @@ df_salaries = pd.DataFrame(salaries)
 print("Merged DataFrame using inner join:\n")
 merged_inner = pd.merge(df_employees, df_salaries, on='ID', how='inner')
 print(merged_inner)
+
+# Merging DataFrames using outer join
+print("\nMerged DataFrame using outer join:\n")
+merged_outer = pd.merge(df_employees, df_salaries, on='ID', how='outer')
+print(merged_outer)
