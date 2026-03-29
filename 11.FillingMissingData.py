@@ -13,3 +13,9 @@ df = pd.DataFrame(data)
 print("DataFrame after filling missing values with 'Unknown':\n")
 df_filled_value = df.fillna('Unknown')
 print(df_filled_value)
+
+values = {'Name': 'Unknown', 'Age': 19, 'City': 'In Nepal'}
+# Filling missing values with different values for each column
+print("\nDataFrame after filling missing values with different values for each column:\n")
+df_filled_different = df.fillna(values)
+print(df_filled_different)
