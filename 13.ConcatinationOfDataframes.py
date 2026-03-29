@@ -22,3 +22,8 @@ df2 = pd.DataFrame(data2)
 print("Concatenated DataFrame (vertical):\n")
 concatenated_vertical = pd.concat([df1, df2]).reset_index(drop=True)
 print(concatenated_vertical)
+
+# Concatenating DataFrames horizontally
+print("\nConcatenated DataFrame (horizontal):\n")
+concatenated_horizontal = pd.concat([df1, df2], axis=1)
+print(concatenated_horizontal)
