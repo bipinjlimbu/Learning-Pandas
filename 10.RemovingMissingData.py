@@ -18,3 +18,8 @@ print(df_dropped_rows)
 print("\nDataFrame after removing columns with missing values:\n")
 df_dropped_columns = df.dropna(axis=1)
 print(df_dropped_columns)
+
+# Removing rows with missing values using a threshold
+print("\nDataFrame after removing rows with at least 2 non-missing values:\n")
+df_dropped_threshold = df.dropna(thresh=2)
+print(df_dropped_threshold)
