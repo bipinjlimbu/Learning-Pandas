@@ -14,3 +14,8 @@ df2 = pd.DataFrame({
 joined_df = df1.join(df2, how='inner')
 print("Joined DataFrame using inner join:\n")
 print(joined_df)
+
+#Outer Joining DataFrames
+joined_df_outer = df1.join(df2, how='outer')
+print("\nJoined DataFrame using outer join:\n")
+print(joined_df_outer)
