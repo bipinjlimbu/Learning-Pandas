@@ -26,7 +26,7 @@ def calculate_months(timestamp):
         return None
 
 
-df['Total_Months'] = df['Timestamp'].apply(calculate_months)
+df['Months'] = df['Timestamp'].apply(calculate_months)
 
 if __name__ == "__main__":
     print("\nFirst 5 rows with Total Months:\n")
