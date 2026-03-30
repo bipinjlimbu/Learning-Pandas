@@ -1,5 +1,5 @@
 import pandas as pd
-from CSV import df
+from anime_csv import df
 
 # Feature Extraction: Extracting the number of episodes from the 'Title' column
 
