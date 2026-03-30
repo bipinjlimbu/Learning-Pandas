@@ -23,4 +23,5 @@ df['Episodes'] = df['Title'].apply(lambda x: extract_episode(x))
 df['Episodes'] = df['Episodes'].str.replace(' eps', '').astype(int)
 
 if __name__ == "__main__":
-    print(df)
+    print("\nFirst 5 rows of the DataFrame with Episodes:\n")
+    print(df.head())
