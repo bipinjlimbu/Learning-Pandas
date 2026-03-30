@@ -21,4 +21,6 @@ def extract_episode(txt):
 
 df['Episodes'] = df['Title'].apply(lambda x: extract_episode(x))
 df['Episodes'] = df['Episodes'].str.replace(' eps', '').astype(int)
-print(df)
+
+if __name__ == "__main__":
+    print(df)
