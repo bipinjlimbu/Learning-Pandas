@@ -1,6 +1,8 @@
 import pandas as pd
 from Project1 import df
 
+# Feature Extraction: Extracting the timestamp from the 'Title' column
+
 def extract_timestamp(txt):
     data = ''
     for i in range(len(txt)):
